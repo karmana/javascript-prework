@@ -3,18 +3,54 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
-	<link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato:wght@300;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons">
-            <button id="button-rock">Kamień</button>
-            <button id="button-paper">Papier</button>
-            <button id="button-scissors">Nożyce</button>        
+   <section class="introduction">
+    <div class="container">
+        <h1>Papier, kamień, nożyce</h1>
+       
+        <div class="intro">
+                <div class="rules"> 
+                    <h3 class="subtitle">Zasady</h3>
+                    <p>Gra składa się z kolejnych tur. W każdej turze obydwaj gracze, na umówiony sygnał, szybko wystawiają przed siebie dłoń, pokazującą symbol papieru, kamienia lub nożyc. 
+                        Gracz, który pokazał silniejszy symbol, otrzymuje jeden punkt. W przypadku pokazania dwóch takich samych symboli następuje remis – punktu brak. Oto hierarchia symboli:</p>
+                        <ul>
+                            <li>nożyce są silniejsze od papieru, ponieważ go tną,</li>
+                            <li>kamień jest silniejszy od nożyc, ponieważ je tępi,</li>
+                            <li>papier jest silniejszy od kamienia, ponieważ go owija.</li>
+                        </ul>
+                    <p>Gracz, który pierwszy uzyska umówioną wcześniej ilość punktów, wygrywa partię.</p>
+                </div>
+                
+                <div class="img">
+                    <img src="https://i.postimg.cc/cCGFyXj3/Rock-paper-scissors-Polish.jpg">
+                </div>
+                
         </div>
-		<div id="messages"></div>
-	</div>
-	<script src="js/functions.js"></script>
+    </div>   
+    </section>
+
+    <section class="play">
+        <div class="container">
+            <h2>Zagramy?</h2>
+            <h3>Wybierz swój ruch</h3>
+                <div id="buttons">
+                    <button id="button-rock"><i class="fas fa-hand-rock"></i>Kamień</button>
+                    <button id="button-paper"><i class="fas fa-hand-paper"></i>Papier</button>
+                    <button id="button-scissors"><i class="fas fa-hand-scissors"></i>Nożyce</button>        
+                </div>
+                <div id="messages"></div>
+                <div id="result"></div>
+        
+        </div>
+    </section>
+	
+    <script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
