@@ -9,7 +9,7 @@ function buttonClicked(argButtonName) {
   clearMessages();
   console.log(argButtonName + ' został kliknięty');
 
-  var argComputerMove, argMoveId, argPlayerMove, computerMove, playerInput, playerMove, randomNumber;
+  var computerMove, playerInput, playerMove, randomNumber;
 
   /**
    * Describe this function...
