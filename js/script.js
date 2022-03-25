@@ -1,4 +1,4 @@
-var argButtonName, button_paper, button_rock, button_scissors, buttonTest;
+var button_paper, button_rock, button_scissors, buttonTest;
 
 buttonTest = document.getElementById('button-test');
 button_paper = document.getElementById('button-paper');
