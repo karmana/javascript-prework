@@ -1,9 +1,7 @@
-var button_paper, button_rock, button_scissors, buttonTest;
-
-buttonTest = document.getElementById('button-test');
-button_paper = document.getElementById('button-paper');
-button_rock = document.getElementById('button-rock');
-button_scissors = document.getElementById('button-scissors');
+const buttonTest = document.getElementById('button-test');
+const button_paper = document.getElementById('button-paper');
+const button_rock = document.getElementById('button-rock');
+const button_scissors = document.getElementById('button-scissors');
 
 function buttonClicked(argButtonName) {
   clearMessages();
